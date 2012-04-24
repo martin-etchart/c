@@ -1,0 +1,29 @@
+# Programa: makefile3
+# Curso: Programación C - http://iie.fing.edu.uy/rosaluna/wiki/Ipol:Modulo4
+# Proyecto: encuadro
+# Autor: Martin Etchart
+#
+# Descripción:
+# Makefile. 
+# make es una herramienta de generación o automatización de código, que lee las
+# instrucciones para generar el programa u otra acción del archivo makefile.
+#
+# Crear un makefile que compile sin enlazar los archivos auxiliares.c y quinto.c, y luego
+# enlace ambos códigos objeto (.o) para crear el ejecutable quinto.
+#
+# Utilizar los comandos $@ y $^ para modificar el makefile anterior, de modo de evitar 
+# repetir el nombre de los archivos fuente.
+#
+
+CC = gcc
+CFLAGS = -std=c99
+
+quinto : auxiliares.o quinto.o
+	$(CC) auxiliares.o quinto.o -o $@
+	
+auxiliares.o : auxiliares.c
+	$(CC) $(CFLAGS) -c $^
+
+quinto.o : quinto.c
+	$(CC) $(CFLAGS) -c $^
+

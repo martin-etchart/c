@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/roho/workspace/c/modulo4/cmake/1/auxiliares.c
+
+/home/roho/workspace/c/modulo4/cmake/1/auxiliares.h
+
+/home/roho/workspace/c/modulo4/cmake/1/quinto.c
+stdio.h
+-
+auxiliares.h
+/home/roho/workspace/c/modulo4/cmake/1/auxiliares.h
+

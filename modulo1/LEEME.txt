@@ -1,0 +1,9 @@
+Comentarios:
+
+-Link en la wiki a sexto2.c dirige a sexto.c
+-Preprocesado? Que onda?
+-Cuando compilo octavo me tira (a mou no se la tira):
+	octavo.c:29:2: warning: format ‘%d’ expects type ‘int’, but argument 2 has type ‘long unsigned int’.
+
+
+

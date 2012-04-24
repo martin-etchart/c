@@ -1,0 +1,1 @@
+/usr/bin/gcc  -fPIC    -shared -Wl,-soname,libabc.so -o libabc.so CMakeFiles/abc.dir/a.c.o CMakeFiles/abc.dir/b.c.o CMakeFiles/abc.dir/c.c.o 

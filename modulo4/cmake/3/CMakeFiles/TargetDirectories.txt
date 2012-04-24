@@ -1,0 +1,2 @@
+/home/roho/workspace/c/modulo4/cmake/3/library/CMakeFiles/abc.dir
+/home/roho/workspace/c/modulo4/cmake/3/demo/CMakeFiles/demo.dir

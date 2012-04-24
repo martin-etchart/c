@@ -1,0 +1,12 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/roho/workspace/c/modulo4/cmake/3/demo/demo.c
+libabc.h
+/home/roho/workspace/c/modulo4/cmake/3/demo/libabc.h
+

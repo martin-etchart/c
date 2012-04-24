@@ -1,0 +1,1 @@
+/home/roho/workspace/c/modulo4/cmake/1/CMakeFiles/Quinto.dir

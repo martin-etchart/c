@@ -1,0 +1,5 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$fir_8c.html#a223126adbbeb0a93b3b9f57f7a62930c" title="Aplica filtrado FIR a la muestra de entrada." alt="" coords="112,5,149,35"/>
+<area shape="rect" id="node5" href="$fir_8c.html#ad9cc0267f9951095aba414b49b7f8aa5" title="Inicializa el filtro." alt="" coords="104,59,157,88"/>
+<area shape="rect" id="node7" href="$genera__senales_8c.html#ac1831abad5ea41543128b85234b25905" title="Genera señales tipo escalón." alt="" coords="108,112,153,141"/>
+</map>

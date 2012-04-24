@@ -1,0 +1,47 @@
+\begin{theindex}
+
+  \item {fir}
+    \subitem {fir.c}, \hyperpage{4}
+    \subitem {fir.h}, \hyperpage{6}
+  \item {fir.c}, \hyperpage{3}
+    \subitem {fir}, \hyperpage{4}
+    \subitem {ini\_\discretionary {-}{}{}fir}, \hyperpage{4}
+  \item {fir.h}, \hyperpage{4}
+    \subitem {fir}, \hyperpage{6}
+    \subitem {ini\_\discretionary {-}{}{}fir}, \hyperpage{6}
+
+  \indexspace
+
+  \item {genera\_\discretionary {-}{}{}senales.c}, \hyperpage{6}
+    \subitem {impulso}, \hyperpage{7}
+    \subitem {step}, \hyperpage{8}
+  \item {genera\_\discretionary {-}{}{}senales.h}, \hyperpage{8}
+    \subitem {impulso}, \hyperpage{9}
+    \subitem {step}, \hyperpage{9}
+
+  \indexspace
+
+  \item {impulso}
+    \subitem {genera\_\discretionary {-}{}{}senales.c}, \hyperpage{7}
+    \subitem {genera\_\discretionary {-}{}{}senales.h}, \hyperpage{9}
+  \item {ini\_\discretionary {-}{}{}fir}
+    \subitem {fir.c}, \hyperpage{4}
+    \subitem {fir.h}, \hyperpage{6}
+
+  \indexspace
+
+  \item {main}
+    \subitem {testfir.c}, \hyperpage{11}
+
+  \indexspace
+
+  \item {step}
+    \subitem {genera\_\discretionary {-}{}{}senales.c}, \hyperpage{8}
+    \subitem {genera\_\discretionary {-}{}{}senales.h}, \hyperpage{9}
+
+  \indexspace
+
+  \item {testfir.c}, \hyperpage{10}
+    \subitem {main}, \hyperpage{11}
+
+\end{theindex}

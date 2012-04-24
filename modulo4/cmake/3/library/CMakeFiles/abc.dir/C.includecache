@@ -1,0 +1,14 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/roho/workspace/c/modulo4/cmake/3/library/a.c
+
+/home/roho/workspace/c/modulo4/cmake/3/library/b.c
+
+/home/roho/workspace/c/modulo4/cmake/3/library/c.c
+

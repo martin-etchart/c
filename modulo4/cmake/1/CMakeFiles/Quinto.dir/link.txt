@@ -1,0 +1,1 @@
+/usr/bin/gcc      CMakeFiles/Quinto.dir/quinto.c.o CMakeFiles/Quinto.dir/auxiliares.c.o  -o Quinto -rdynamic 

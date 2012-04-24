@@ -1,0 +1,92 @@
+\hypertarget{genera__senales_8h}{
+\section{Referencia del Archivo genera\_\-senales.h}
+\label{genera__senales_8h}\index{genera\_\-senales.h@{genera\_\-senales.h}}
+}
+
+
+Genera señales sintéticas para la prueba de la implementación del filtro FIR. Genera señales tipo escalón e impulso.  
+
+
+{\ttfamily \#include \char`\"{}fir.h\char`\"{}}\par
+Dependencia gráfica adjunta para genera\_\-senales.h:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=172pt]{genera__senales_8h__incl}
+\end{center}
+\end{figure}
+Gráfico de los archivos que directa o indirectamente incluyen a este archivo:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=240pt]{genera__senales_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Funciones}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{genera__senales_8h_a10df71dbee03eb4676d58cbd1fa25042}{step} (\hyperlink{fir_8h_aa0798f7ea0975b143a1d9deac8c05d43}{sample\_\-t} $\ast$pu, int tsubida, \hyperlink{fir_8h_aa0798f7ea0975b143a1d9deac8c05d43}{sample\_\-t} altura)
+\begin{DoxyCompactList}\small\item\em Genera señales tipo escalón. \end{DoxyCompactList}\item 
+void \hyperlink{genera__senales_8h_a40c9b355ff90e9490a42d6cea8d0e440}{impulso} (\hyperlink{fir_8h_aa0798f7ea0975b143a1d9deac8c05d43}{sample\_\-t} $\ast$pu, int tsubida, \hyperlink{fir_8h_aa0798f7ea0975b143a1d9deac8c05d43}{sample\_\-t} altura)
+\begin{DoxyCompactList}\small\item\em Genera señales tipo impulso. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Descripción detallada}
+Genera señales sintéticas para la prueba de la implementación del filtro FIR. Genera señales tipo escalón e impulso. 
+
+\subsection{Documentación de las funciones}
+\hypertarget{genera__senales_8h_a40c9b355ff90e9490a42d6cea8d0e440}{
+\index{genera\_\-senales.h@{genera\_\-senales.h}!impulso@{impulso}}
+\index{impulso@{impulso}!genera_senales.h@{genera\_\-senales.h}}
+\subsubsection[{impulso}]{\setlength{\rightskip}{0pt plus 5cm}void impulso (
+\begin{DoxyParamCaption}
+\item[{{\bf sample\_\-t} $\ast$}]{pu, }
+\item[{int}]{tsubida, }
+\item[{{\bf sample\_\-t}}]{altura}
+\end{DoxyParamCaption}
+)}}
+\label{genera__senales_8h_a40c9b355ff90e9490a42d6cea8d0e440}
+
+
+Genera señales tipo impulso. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em pu} & Puntero al array de la señal de entrada. \\
+\hline
+{\em tsubida} & Retardo (en muestras) del impulso. \\
+\hline
+{\em altura} & Altuda del impulso a generar. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+No tiene salida. 
+\end{DoxyReturn}
+\hypertarget{genera__senales_8h_a10df71dbee03eb4676d58cbd1fa25042}{
+\index{genera\_\-senales.h@{genera\_\-senales.h}!step@{step}}
+\index{step@{step}!genera_senales.h@{genera\_\-senales.h}}
+\subsubsection[{step}]{\setlength{\rightskip}{0pt plus 5cm}void step (
+\begin{DoxyParamCaption}
+\item[{{\bf sample\_\-t} $\ast$}]{pu, }
+\item[{int}]{tsubida, }
+\item[{{\bf sample\_\-t}}]{altura}
+\end{DoxyParamCaption}
+)}}
+\label{genera__senales_8h_a10df71dbee03eb4676d58cbd1fa25042}
+
+
+Genera señales tipo escalón. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em pu} & Puntero al array de la señal de entrada. \\
+\hline
+{\em tsubida} & Retardo (en muestras) del escalón. \\
+\hline
+{\em altura} & Altura del escalón a generar. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+No tiene salida. 
+\end{DoxyReturn}

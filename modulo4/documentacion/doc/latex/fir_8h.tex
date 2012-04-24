@@ -1,0 +1,93 @@
+\hypertarget{fir_8h}{
+\section{Referencia del Archivo fir.h}
+\label{fir_8h}\index{fir.h@{fir.h}}
+}
+
+
+Implementa las funciones de inicialzación del filtro y la función de filtrado.  
+
+
+Gráfico de los archivos que directa o indirectamente incluyen a este archivo:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=275pt]{fir_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{'defines'}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{fir_8h_a54bcb275fff58085463f7abd54bf6459}{
+\#define \hyperlink{fir_8h_a54bcb275fff58085463f7abd54bf6459}{TAP\_\-LENGTH}~5}
+\label{fir_8h_a54bcb275fff58085463f7abd54bf6459}
+
+\begin{DoxyCompactList}\small\item\em Orden del filtro. \end{DoxyCompactList}\item 
+\hypertarget{fir_8h_ac52f13939afa0489aa4ee20f3ace3515}{
+\#define \hyperlink{fir_8h_ac52f13939afa0489aa4ee20f3ace3515}{SIGNAL\_\-LENGTH}~15}
+\label{fir_8h_ac52f13939afa0489aa4ee20f3ace3515}
+
+\begin{DoxyCompactList}\small\item\em Cantidad de muestras. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{'typedefs'}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{fir_8h_aa0798f7ea0975b143a1d9deac8c05d43}{
+typedef float \hyperlink{fir_8h_aa0798f7ea0975b143a1d9deac8c05d43}{sample\_\-t}}
+\label{fir_8h_aa0798f7ea0975b143a1d9deac8c05d43}
+
+\begin{DoxyCompactList}\small\item\em Tipo definido para manejar muestras de la señal. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Funciones}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{fir_8h_ada2d9b4969eff61ebfbee6ee1bc25206}{ini\_\-fir} (\hyperlink{fir_8h_aa0798f7ea0975b143a1d9deac8c05d43}{sample\_\-t} coefs\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em Inicializa el filtro. \end{DoxyCompactList}\item 
+\hyperlink{fir_8h_aa0798f7ea0975b143a1d9deac8c05d43}{sample\_\-t} \hyperlink{fir_8h_a2e0d7a8a9b3434fcf994e973dba8349f}{fir} (\hyperlink{fir_8h_aa0798f7ea0975b143a1d9deac8c05d43}{sample\_\-t} $\ast$muestra)
+\begin{DoxyCompactList}\small\item\em Aplica filtrado FIR a la muestra de entrada. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Descripción detallada}
+Implementa las funciones de inicialzación del filtro y la función de filtrado. 
+
+\subsection{Documentación de las funciones}
+\hypertarget{fir_8h_a2e0d7a8a9b3434fcf994e973dba8349f}{
+\index{fir.h@{fir.h}!fir@{fir}}
+\index{fir@{fir}!fir.h@{fir.h}}
+\subsubsection[{fir}]{\setlength{\rightskip}{0pt plus 5cm}{\bf sample\_\-t} fir (
+\begin{DoxyParamCaption}
+\item[{{\bf sample\_\-t} $\ast$}]{muestra}
+\end{DoxyParamCaption}
+)}}
+\label{fir_8h_a2e0d7a8a9b3434fcf994e973dba8349f}
+
+
+Aplica filtrado FIR a la muestra de entrada. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em muestra} & Puntero a la muestra de la señal de entrada (tipo sample\_\-t) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Devuelve la muestra de la señal de salida del filtro. 
+\end{DoxyReturn}
+\hypertarget{fir_8h_ada2d9b4969eff61ebfbee6ee1bc25206}{
+\index{fir.h@{fir.h}!ini\_\-fir@{ini\_\-fir}}
+\index{ini\_\-fir@{ini\_\-fir}!fir.h@{fir.h}}
+\subsubsection[{ini\_\-fir}]{\setlength{\rightskip}{0pt plus 5cm}void ini\_\-fir (
+\begin{DoxyParamCaption}
+\item[{{\bf sample\_\-t}}]{coefs\mbox{[}$\,$\mbox{]}}
+\end{DoxyParamCaption}
+)}}
+\label{fir_8h_ada2d9b4969eff61ebfbee6ee1bc25206}
+
+
+Inicializa el filtro. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em coefs\mbox{[}$\,$\mbox{]}} & Coeficientes del filtro (array de elementos tipos sample\_\-t) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+No tiene salida. 
+\end{DoxyReturn}

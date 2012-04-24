@@ -1,0 +1,85 @@
+\hypertarget{fir_8c}{
+\section{Referencia del Archivo fir.c}
+\label{fir_8c}\index{fir.c@{fir.c}}
+}
+
+
+Implementa las funciones de inicialzación del filtro y la función de filtrado.  
+
+
+{\ttfamily \#include \char`\"{}fir.h\char`\"{}}\par
+Dependencia gráfica adjunta para fir.c:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=112pt]{fir_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Funciones}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{fir_8c_ad9cc0267f9951095aba414b49b7f8aa5}{ini\_\-fir} (\hyperlink{fir_8h_aa0798f7ea0975b143a1d9deac8c05d43}{sample\_\-t} coefs\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em Inicializa el filtro. \end{DoxyCompactList}\item 
+\hyperlink{fir_8h_aa0798f7ea0975b143a1d9deac8c05d43}{sample\_\-t} \hyperlink{fir_8c_a223126adbbeb0a93b3b9f57f7a62930c}{fir} (\hyperlink{fir_8h_aa0798f7ea0975b143a1d9deac8c05d43}{sample\_\-t} $\ast$muestra)
+\begin{DoxyCompactList}\small\item\em Aplica filtrado FIR a la muestra de entrada. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{fir_8c_a03b04ea25ff5dd95beeb156adfe92712}{
+\hyperlink{fir_8h_aa0798f7ea0975b143a1d9deac8c05d43}{sample\_\-t} \hyperlink{fir_8c_a03b04ea25ff5dd95beeb156adfe92712}{c} \mbox{[}TAP\_\-LENGTH\mbox{]}}
+\label{fir_8c_a03b04ea25ff5dd95beeb156adfe92712}
+
+\begin{DoxyCompactList}\small\item\em Coeficientes del filtro. \end{DoxyCompactList}\item 
+\hypertarget{fir_8c_af37f978ae66f0531f1c5882146b38a26}{
+int \hyperlink{fir_8c_af37f978ae66f0531f1c5882146b38a26}{taps} = 0}
+\label{fir_8c_af37f978ae66f0531f1c5882146b38a26}
+
+\begin{DoxyCompactList}\small\item\em Contador de taps disponibles para la inicialización. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Descripción detallada}
+Implementa las funciones de inicialzación del filtro y la función de filtrado. 
+
+\subsection{Documentación de las funciones}
+\hypertarget{fir_8c_a223126adbbeb0a93b3b9f57f7a62930c}{
+\index{fir.c@{fir.c}!fir@{fir}}
+\index{fir@{fir}!fir.c@{fir.c}}
+\subsubsection[{fir}]{\setlength{\rightskip}{0pt plus 5cm}fir (
+\begin{DoxyParamCaption}
+\item[{{\bf sample\_\-t} $\ast$}]{muestra}
+\end{DoxyParamCaption}
+)}}
+\label{fir_8c_a223126adbbeb0a93b3b9f57f7a62930c}
+
+
+Aplica filtrado FIR a la muestra de entrada. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em muestra} & Puntero a la muestra de la señal de entrada (tipo sample\_\-t) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Devuelve la muestra de la señal de salida del filtro. 
+\end{DoxyReturn}
+\hypertarget{fir_8c_ad9cc0267f9951095aba414b49b7f8aa5}{
+\index{fir.c@{fir.c}!ini\_\-fir@{ini\_\-fir}}
+\index{ini\_\-fir@{ini\_\-fir}!fir.c@{fir.c}}
+\subsubsection[{ini\_\-fir}]{\setlength{\rightskip}{0pt plus 5cm}ini\_\-fir (
+\begin{DoxyParamCaption}
+\item[{{\bf sample\_\-t}}]{coefs\mbox{[}$\,$\mbox{]}}
+\end{DoxyParamCaption}
+)}}
+\label{fir_8c_ad9cc0267f9951095aba414b49b7f8aa5}
+
+
+Inicializa el filtro. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em coefs\mbox{[}$\,$\mbox{]}} & Coeficientes del filtro (array de elementos tipos sample\_\-t) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+No tiene salida. 
+\end{DoxyReturn}

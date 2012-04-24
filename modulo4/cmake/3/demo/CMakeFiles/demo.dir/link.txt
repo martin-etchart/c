@@ -1,0 +1,1 @@
+/usr/bin/gcc      CMakeFiles/demo.dir/demo.c.o  -o demo -rdynamic ../library/libabc.so -Wl,-rpath,/home/roho/workspace/c/modulo4/cmake/3/library 

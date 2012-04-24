@@ -1,0 +1,174 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>Filtro FIR en C: Referencia del Archivo fir.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body onload='searchBox.OnSelectItem(0);'>
+<!-- Generado por Doxygen 1.7.4 -->
+<script type="text/javascript"><!--
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+--></script>
+<div id="top">
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Filtro FIR en C&#160;<span id="projectnumber">1.0</span></div>
+   <div id="projectbrief">Diseño de un filtro FIR en C.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;principal</span></a></li>
+      <li class="current"><a href="files.html"><span>Archivos</span></a></li>
+      <li id="searchli">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Buscar" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;de&#160;archivos</span></a></li>
+      <li><a href="globals.html"><span>Globales</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="header">
+  <div class="summary">
+<a href="#define-members">'defines'</a> &#124;
+<a href="#typedef-members">'typedefs'</a> &#124;
+<a href="#func-members">Funciones</a>  </div>
+  <div class="headertitle">
+<div class="title">Referencia del Archivo fir.h</div>  </div>
+</div>
+<div class="contents">
+
+<p>Implementa las funciones de inicialzación del filtro y la función de filtrado.  
+<a href="#details">Más...</a></p>
+<div class="textblock"><div class="dynheader">
+Gráfico de los archivos que directa o indirectamente incluyen a este archivo:</div>
+<div class="dyncontent">
+<div class="center"><img src="fir_8h__dep__incl.png" border="0" usemap="#fir_8hdep" alt=""/></div>
+<map name="fir_8hdep" id="fir_8hdep">
+<area shape="rect" id="node3" href="fir_8c.html" title="Implementa las funciones de inicialzación del filtro y la función de filtrado." alt="" coords="5,83,48,112"/><area shape="rect" id="node5" href="genera__senales_8h.html" title="Genera señales sintéticas para la prueba de la implementación del filtro FIR. Genera señales tipo esc..." alt="" coords="72,83,195,112"/><area shape="rect" id="node9" href="testfir_8c.html" title="Programa para probar el filtro FIR implementado." alt="" coords="199,160,265,189"/><area shape="rect" id="node7" href="genera__senales_8c.html" title="Genera señales sintéticas para la prueba de la implementación del filtro FIR. Genera señales tipo esc..." alt="" coords="52,160,175,189"/></map>
+</div>
+</div>
+<p><a href="fir_8h_source.html">Ir al código fuente de este archivo.</a></p>
+<table class="memberdecls">
+<tr><td colspan="2"><h2><a name="define-members"></a>
+'defines'</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a54bcb275fff58085463f7abd54bf6459"></a><!-- doxytag: member="fir.h::TAP_LENGTH" ref="a54bcb275fff58085463f7abd54bf6459" args="" -->
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fir_8h.html#a54bcb275fff58085463f7abd54bf6459">TAP_LENGTH</a>&#160;&#160;&#160;5</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Orden del filtro. <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac52f13939afa0489aa4ee20f3ace3515"></a><!-- doxytag: member="fir.h::SIGNAL_LENGTH" ref="ac52f13939afa0489aa4ee20f3ace3515" args="" -->
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fir_8h.html#ac52f13939afa0489aa4ee20f3ace3515">SIGNAL_LENGTH</a>&#160;&#160;&#160;15</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Cantidad de muestras. <br/></td></tr>
+<tr><td colspan="2"><h2><a name="typedef-members"></a>
+'typedefs'</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa0798f7ea0975b143a1d9deac8c05d43"></a><!-- doxytag: member="fir.h::sample_t" ref="aa0798f7ea0975b143a1d9deac8c05d43" args="" -->
+typedef float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fir_8h.html#aa0798f7ea0975b143a1d9deac8c05d43">sample_t</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Tipo definido para manejar muestras de la señal. <br/></td></tr>
+<tr><td colspan="2"><h2><a name="func-members"></a>
+Funciones</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fir_8h.html#ada2d9b4969eff61ebfbee6ee1bc25206">ini_fir</a> (<a class="el" href="fir_8h.html#aa0798f7ea0975b143a1d9deac8c05d43">sample_t</a> coefs[])</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Inicializa el filtro.  <a href="#ada2d9b4969eff61ebfbee6ee1bc25206"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="fir_8h.html#aa0798f7ea0975b143a1d9deac8c05d43">sample_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fir_8h.html#a2e0d7a8a9b3434fcf994e973dba8349f">fir</a> (<a class="el" href="fir_8h.html#aa0798f7ea0975b143a1d9deac8c05d43">sample_t</a> *muestra)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Aplica filtrado FIR a la muestra de entrada.  <a href="#a2e0d7a8a9b3434fcf994e973dba8349f"></a><br/></td></tr>
+</table>
+<hr/><a name="details" id="details"></a><h2>Descripción detallada</h2>
+<div class="textblock"><p>Implementa las funciones de inicialzación del filtro y la función de filtrado. </p>
+</div><hr/><h2>Documentación de las funciones</h2>
+<a class="anchor" id="a2e0d7a8a9b3434fcf994e973dba8349f"></a><!-- doxytag: member="fir.h::fir" ref="a2e0d7a8a9b3434fcf994e973dba8349f" args="(sample_t *muestra)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="fir_8h.html#aa0798f7ea0975b143a1d9deac8c05d43">sample_t</a> fir </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="fir_8h.html#aa0798f7ea0975b143a1d9deac8c05d43">sample_t</a> *&#160;</td>
+          <td class="paramname"><em>muestra</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Aplica filtrado FIR a la muestra de entrada. </p>
+<dl><dt><b>Parámetros:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">muestra</td><td>Puntero a la muestra de la señal de entrada (tipo sample_t) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Devuelve:</b></dt><dd>Devuelve la muestra de la señal de salida del filtro. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ada2d9b4969eff61ebfbee6ee1bc25206"></a><!-- doxytag: member="fir.h::ini_fir" ref="ada2d9b4969eff61ebfbee6ee1bc25206" args="(sample_t coefs[])" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ini_fir </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="fir_8h.html#aa0798f7ea0975b143a1d9deac8c05d43">sample_t</a>&#160;</td>
+          <td class="paramname"><em>coefs</em>[]</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Inicializa el filtro. </p>
+<dl><dt><b>Parámetros:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">coefs[]</td><td>Coeficientes del filtro (array de elementos tipos sample_t) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Devuelve:</b></dt><dd>No tiene salida. </dd></dl>
+
+</div>
+</div>
+</div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Todo</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Archivos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Funciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>&apos;typedefs&apos;</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>&apos;defines&apos;</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<hr class="footer"/><address class="footer"><small>Generado el Miércoles, 2 de Noviembre de 2011 11:59:29 para Filtro FIR en C por&#160;
+<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.4 </small></address>
+</body>
+</html>
